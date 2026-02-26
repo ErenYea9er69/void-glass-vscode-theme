@@ -1,0 +1,36 @@
+{
+  "name": "void-glass",
+  "displayName": "Void Glass",
+  "description": "Pitch-black transparent glassmorphism color theme for Antigravity & VS Code",
+  "version": "1.0.0",
+  "publisher": "bmh",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "black",
+    "transparent",
+    "glassmorphism",
+    "neon",
+    "cyan"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Void Glass",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Void Glass-color-theme.json"
+      }
+    ]
+  },
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmh/void-glass.git"
+  }
+}
