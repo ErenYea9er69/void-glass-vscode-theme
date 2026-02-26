@@ -1,0 +1,84 @@
+/* ========================================================
+   Void Glass Custom Animations
+   Adds smooth, high-quality transitions to VS Code UI elements
+   to enhance the glassmorphism aesthetic.
+   ======================================================== */
+
+/* 1. Global Buttons (Primary and Secondary) */
+.monaco-button, .monaco-button-dropdown {
+    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.2s ease !important;
+    transform-origin: center center !important;
+}
+
+.monaco-button:hover {
+    transform: scale(1.03) !important;
+}
+
+.monaco-button:active {
+    transform: scale(0.97) !important;
+}
+
+/* 2. Sidebar Navigation (Folders, Files, References) */
+.monaco-list-row {
+    transition: background-color 0.15s ease, padding-left 0.2s ease !important;
+}
+
+/* Add a very subtle slide-in effect when hovering over side panel items */
+.monaco-list-row:hover {
+    padding-left: 4px !important;
+}
+
+/* 3. Activity Bar (The far left icon menu) */
+.activitybar .action-label {
+    transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.3, 1.5, 0.4, 1) !important;
+    transform-origin: center center;
+}
+
+/* Make the icons bounce slightly on hover */
+.activitybar .action-item:hover .action-label {
+    transform: scale(1.15) !important;
+}
+
+/* 4. Editor Tabs */
+.tab {
+    transition: background-color 0.25s ease, box-shadow 0.25s ease, inset 0.25s ease !important;
+}
+
+.tab:hover {
+    box-shadow: inset 0 -2px 0 0 #ffffff50 !important;
+}
+
+/* 5. Notifications / Popups */
+/* Add a smooth slide-up effect for new notifications */
+.monaco-workbench .notifications-center,
+.monaco-workbench .notifications-toasts .monaco-list-row {
+    animation: slideInBottom 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards !important;
+}
+
+@keyframes slideInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 6. Context Menus / Dropdowns */
+.monaco-menu {
+    animation: fadeInScale 0.15s ease-out forwards !important;
+    transform-origin: top left !important;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
