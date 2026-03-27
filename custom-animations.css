@@ -82,3 +82,78 @@
         transform: scale(1);
     }
 }
+/* 7. Antigravity Specific UI Overrides (New Planning Mode) */
+
+/* Message Bubbles - Modern Glassmorphism */
+.ag-chat-message-bubble, .chat-message {
+    background-color: #000000cc !important;
+    border: 1px solid #ffffff15 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    margin-bottom: 12px !important;
+    backdrop-filter: blur(8px) !important;
+    transition: transform 0.2s ease, border-color 0.2s ease !important;
+}
+
+.ag-chat-message-bubble:hover, .chat-message:hover {
+    border-color: #e6c27a40 !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Status Indicator (Worked for Xm) */
+.ag-planning-status, .status-indicator, div:has(> .icon-clock) {
+    color: #e6c27a !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    background: #e6c27a10 !important;
+    margin: 8px 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+/* Walkthrough Card - Premium Look */
+.ag-walkthrough-card, .walkthrough-box, div:has(> .icon-key) {
+    background: #0a0a0acc !important;
+    border: 1px solid #e6c27a40 !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    margin: 12px 0 !important;
+    cursor: pointer !important;
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+.ag-walkthrough-card:hover, .walkthrough-box:hover {
+    background: #e6c27a15 !important;
+    border-color: #e6c27a !important;
+    transform: scale(1.02) !important;
+}
+
+/* File Tags & Badges */
+.ag-file-tag, .ag-file-chip, .file-tag {
+    background: #000000 !important;
+    color: #e6c27a !important;
+    border: 1px solid #e6c27a60 !important;
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+}
+
+/* Redefine modified counts */
+.ag-count-badge, .badge {
+    background: #e6c27a !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+    border-radius: 12px !important;
+    min-width: 18px !important;
+    text-align: center !important;
+}
+
+/* Smooth transitions for all planning elements */
+.ag-planning-container * {
+    transition: all 0.2s ease !important;
+}

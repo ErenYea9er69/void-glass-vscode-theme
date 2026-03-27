@@ -240,7 +240,15 @@
         "textBlockQuote.background": "#0a0a0acc",
         "textBlockQuote.border": "#333333",
         "textCodeBlock.background": "#0a0a0acc",
-        "textPreformat.foreground": "#cccccc"
+        "textPreformat.foreground": "#cccccc",
+        "antigravity.chatBackground": "#000000",
+        "antigravity.chatForeground": "#d4d4d4",
+        "antigravity.planningBackground": "#050505",
+        "antigravity.planningForeground": "#e6c27a",
+        "antigravity.statusBackground": "#050505",
+        "antigravity.statusForeground": "#888888",
+        "antigravity.walkthroughBackground": "#0a0a0acc",
+        "antigravity.walkthroughBorder": "#e6c27a40"
     },
     "tokenColors": [
         {
